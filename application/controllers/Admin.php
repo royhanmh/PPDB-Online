@@ -45,7 +45,7 @@ class Admin extends CI_Controller
                 'tbl_pendaftar' => $this->db->get('tbl_pendaftar')->result_array()
             ];
 
-            $config['base_url'] = 'http://localhost/UAS_1930511114/admin/dashboard';
+            $config['base_url'] = 'https://ppdb-uas.herokuapp.com/admin/dashboard';
             $config['total_rows'] = $this->Summary_model->hitungPendaftar();
             $config['per_page'] = 10;
             $config['num_links'] = 5;
